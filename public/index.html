@@ -90,16 +90,6 @@
       </div>
     </div>
 
-    <!--
-    Mobile menu, show/hide based on mobile menu state.
-
-    Entering: "duration-200 ease-out"
-      From: "opacity-0 scale-95"
-      To: "opacity-100 scale-100"
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-  -->
     <div class=" hidden absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
         <div class="pt-5 pb-6 px-5 sm:pb-8">
@@ -352,22 +342,7 @@
       </div>
     </div>
   </div>
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
+
 <div class="relative py-16 bg-white">
   <div class="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block" aria-hidden="true"></div>
   <div class="max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8">
@@ -403,8 +378,133 @@
   </div>
 </div>
 
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-12">
+  <!-- Content goes here -->
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <!-- This example requires Tailwind CSS v2.0+ -->
+      <h2 class="text-3xl text-black sm:text-4xl mt-4 px-8">
+        <span class="block text-purple-900 font-extrabold uppercase">Schedule</span>
+        
+      </h2>
+      
+      <nav aria-label="Progress" class="p-8">
+        <ol role="list" class="overflow-hidden">
+          <li class="relative pb-10">
+            <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+            <!-- Current Step -->
+            <div class="relative flex items-start group" aria-current="step">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-indigo-600">Saturday Workshop</span>
+                <span class="text-xl text-gray-500">Saturday, April 30, 10:00 AM - 3:00 PM</span>
+              </span>
+            </div>
+          </li>
+
+          <li class="relative pb-10">
+            <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+            <!-- Current Step -->
+            <div class="relative flex items-start group" aria-current="step">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-indigo-600">Studio Day #1</span>
+                <span class="text-xl text-gray-500">Sunday, May 1, 9:00 AM - 10:00 PM</span>
+              </span>
+            </div>
+          </li>
+
+          <li class="relative pb-10">
+            <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+            <!-- Current Step -->
+            <div class="relative flex items-start group" aria-current="step">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-indigo-600">Studio Day #2</span>
+                <span class="text-xl text-gray-500">Monday, May 2, 9:00 AM - 10:00 PM</span>
+              </span>
+            </div>
+          </li>
+
+          <li class="relative pb-10">
+            <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+            <!-- Current Step -->
+            <div class="relative flex items-start group" aria-current="step">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-indigo-600">Studio Day #3</span>
+                <span class="text-xl text-gray-500">Tuesday, May 3, 9:00 AM - 10:00 PM</span>
+              </span>
+            </div>
+          </li>
+          <li class="relative pb-10">
+            <div class="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true"></div>
+            <!-- Current Step -->
+            <div class="relative flex items-start group" aria-current="step">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-indigo-600">Studio Day #4</span>
+                <span class="text-xl text-gray-500">Wednesday, May 4, 9:00 AM - 2:00 PM</span>
+              </span>
+            </div>
+          </li>
+
+          
+          <li class="relative">
+            <!-- Upcoming Step -->
+            <a href="#" class="relative flex items-start group">
+              <span class="h-9 flex items-center" aria-hidden="true">
+                <span
+                  class="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-indigo-600 rounded-full">
+                  <span class="h-2.5 w-2.5 bg-gray-600 rounded-full"></span>
+                </span>
+              </span>
+              <span class="ml-4 min-w-0 flex flex-col">
+                <span class="text-2xl font-semibold tracking-wide uppercase text-gray-500">Work-In-Progress Presentation</span>
+                <span class="text-xl text-gray-500">6:00 PM - 8:00 PM</span>
+              </span>
+            </a>
+          </li>
+
+        </ol>
+      </nav>
 
 
+    </div>
+
+    <div>
+      <img class="w-full pl-8 pr-8 pt-8 rounded" src="https://lakeworthbeachfl.gov/wp-content/uploads/2022/04/ir1.png">
+      <p class="text-sm pl-8 pr-8 ">This is Site 1 from the original 2020 RFP – parcels located between L and M Streets at 1st Avenue S</p>
+      <img class="w-full pl-8 pr-8 pt-8 rounded" src="https://lakeworthbeachfl.gov/wp-content/uploads/2022/04/ir2.png">
+      <p class="text-sm pl-8 pr-8 ">This is Site 2 from the original 2020 RFP – parcels located along K Street at 1st Avenue S</p>
+    </div>
+  </div>
+</div>
+<div class="mb-24"></div>
 </body>
-
 </html>
